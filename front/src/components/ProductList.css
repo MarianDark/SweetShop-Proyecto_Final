@@ -1,0 +1,115 @@
+/* Contenedor principal de la lista de productos */
+.product-list-container {
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contenedor de la lista de categorías */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20%;
+}
+
+/* Ítem de la categoría */
+.category-item {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: #12eadc;
+  color: #050000;
+  border: 5px double #d33eed;
+  border-radius: 80px;
+  padding: 60px 80px;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  box-shadow: 0 4px #060606;
+  flex: 1;
+  min-width: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #d33eed;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  padding: 50px;
+  border: 8px solid #12eadc;
+  border-radius: 10px;
+  width: 400px;
+  height: auto;
+  font-weight: bold;
+  
+}
+
+.product-card img {
+  width: 80%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.product-card p {
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #1c461e;
+}
+
+.category-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos Responsivos */
+
+/* Ajustes para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .category-item {
+    flex-basis: 40%;
+    margin-top: 10%; /* Reducido el margen superior */
+  }
+  .product-card {
+    width: 90%; /* Ajustar ancho de las tarjetas de producto */
+    margin: 20px; /* Ajustar margen */
+    padding: 20px; /* Reducido padding */
+  }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .category-item {
+    flex-basis: 100%;
+  }
+  .product-card {
+    width: 100%; /* Ajustar ancho de las tarjetas de producto */
+    margin: 10px;
+    padding: 10px; /* Reducido padding */
+  }
+}

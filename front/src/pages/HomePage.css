@@ -1,0 +1,48 @@
+.homepage-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 50vh; /* Mínimo alto de la pantalla completa */
+  overflow-y: auto; /* Permitir scroll vertical si es necesario */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: 1.5rem; /* Reducir tamaño de fuente */
+}
+
+.image-container {
+  width: 50%;
+  max-width: 500px; /* Ancho máximo para mantener la calidad de la imagen */
+  height: 50%; /* Ajustar la altura automáticamente */
+  margin-top: 50px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.image-container1 img {
+  width: 80%;
+  margin-top: 200px;
+  height: auto; /* Ajustar la altura automáticamente */
+  border-radius: 50px; /* Borde redondeado */
+}
+
+@media (max-width: 1024px) {
+  .image-container {
+    width: 90%; /* Reducir el ancho en pantallas más pequeñas */
+    max-width: 600px; /* Limitar el ancho máximo */
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 90%; /* Reducir el ancho en pantallas más pequeñas */
+    max-width: 500px; /* Limitar el ancho máximo */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    width: 90%; /* Reducir el ancho en pantallas más pequeñas */
+    max-width: 300px; /* Limitar el ancho máximo */
+  }
+}

@@ -1,0 +1,102 @@
+.register-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px; /* Ajuste el padding para dispositivos más pequeños */
+  border: 5px solid #12eadc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 10%;
+  width: 50%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+/* Estilos para los elementos input */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Ajusta el ancho al 100% para ocupar el contenedor */
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  
+}
+
+/* Estilos para el botón */
+button[type="submit"] {
+  width: 100%; /* Ajusta el ancho al 100% para ocupar el contenedor */
+  padding: 10px 20px;
+  background-color: #12eadc;
+  color: #050000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px; /* Ajusta el margen superior */
+  border: 5px double #d33eed;
+  box-shadow: 0 4px #060606
+  
+  
+
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #d33eed;
+}
+
+.alert {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 30px; /* Ajuste de padding para dispositivos medianos */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button[type="submit"] {
+    width: 80%; /* Reducción del ancho para mejor visualización en dispositivos pequeños */
+    margin-left: 10%; /* Alineación central para mejor visualización en dispositivos pequeños */
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 20px; /* Ajuste de padding para dispositivos pequeños */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button[type="submit"] {
+    width: 100%; /* Ancho completo para dispositivos muy pequeños */
+    margin-left: 0; /* Alineación central para dispositivos muy pequeños */
+  }
+}

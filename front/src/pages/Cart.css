@@ -1,0 +1,199 @@
+/* Contenedor principal del carrito */
+.cart-container {
+  width: 80%; /* Ajuste del ancho para mayor flexibilidad */
+  max-width: 1200px; /* Reducir el máximo ancho para mejor manejabilidad */
+  background-color: #fbf9f9;
+  padding: 20px;
+  text-align: center;
+  margin: 5% auto; /* Centrar automáticamente el contenedor */
+
+}
+
+/* Imagen del ítem del carrito */
+.cart-item-image {
+  width: 50px; /* Ajustar tamaño para mejor visibilidad */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Título principal */
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Párrafo general */
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Lista de productos en el carrito */
+.cart-products {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada ítem del carrito */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ajustar al 100% del contenedor */
+}
+
+/* Detalles del ítem del carrito */
+.cart-item-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Información del ítem del carrito */
+.cart-item-info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.cart-item p {
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Botón de acción del ítem del carrito */
+.cart-item button {
+  background-color: #f20612;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-item button:hover {
+  background-color: #ff4d4d;
+}
+
+/* Input de cantidad del ítem del carrito */
+.cart-item input {
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+}
+
+/* Resumen del carrito */
+.cart-summary {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ajustar al 100% del contenedor */
+}
+
+.cart-summary p {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Botón del resumen del carrito */
+.cart-summary button {
+  padding: 10px 20px;
+  background-color: #12eadc;
+  color: #030303;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 5px double #d33eed;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cart-summary button:hover {
+  background-color: #0fa9a0;
+}
+
+/* Media Queries */
+
+/* Ajustes para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .cart-container {
+    width: 90%; /* Aumentar el ancho para mayor flexibilidad */
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-item p {
+    font-size: 14px;
+  }
+
+  .cart-item button {
+    margin-top: 10px;
+  }
+
+  .cart-summary p {
+    font-size: 24px; /* Reducir tamaño de fuente para pantallas medianas */
+  }
+
+  .cart-summary button {
+    padding: 8px 16px;
+  }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .cart-container {
+    width: 100%; /* Ajustar al 100% del ancho del viewport */
+    padding: 10px;
+    margin-top: 50%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .cart-item p {
+    font-size: 12px;
+  }
+
+  .cart-item button {
+    padding: 6px 12px;
+  }
+
+  .cart-summary {
+    flex-direction: column;
+  }
+
+  .cart-summary p {
+    font-size: 18px; /* Reducir tamaño de fuente para pantallas pequeñas */
+  }
+
+  .cart-summary button {
+    padding: 6px 12px;
+    margin-top: 10px; /* Añadir margen superior para separación */
+  }
+}

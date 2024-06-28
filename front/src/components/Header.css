@@ -1,0 +1,143 @@
+.header {
+  padding: 20px;
+  background-color: #12eadc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: fixed; /* Asegura que el header sea fijo en la parte superior */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  z-index: 1000; /* Asegura que esté por encima del resto del contenido */
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 20px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.btn-nav {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.btn-nav-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.btn-option-user {
+  color: black;
+  background-color: #d33eed;
+  font-weight: bold;
+  border: none;
+  padding: 8px 15px; /* Reducción del padding para dispositivos pequeños */
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 14px; /* Reducción del tamaño de fuente para dispositivos pequeños */
+}
+
+.btn-option-user:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-option-user-first {
+  margin-left: 0;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-toggler {
+  border: none; /* Elimina el borde */
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 10px; /* Ajusta según la posición deseada desde el borde izquierdo */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%);
+  display: block; /* Hace que el logo sea un elemento bloque */
+}
+
+.navbar-brand img {
+  height: 100px; /* Ajusta el tamaño de la imagen */
+}
+
+/* Media Queries para Responsividad */
+
+@media (max-width: 992px) {
+  .nav-item {
+    font-size: 16px; /* Reducción del tamaño de letra para dispositivos medianos */
+  }
+
+  .nav-item a {
+    font-size: 16px; /* Reducción del tamaño de letra para dispositivos medianos */
+  }
+
+  .btn-nav {
+    top: 15px; /* Ajuste de posición para dispositivos medianos */
+  }
+
+  .navbar-brand {
+    left: 5px; /* Ajuste de posición para dispositivos medianos */
+  }
+
+  .navbar-brand img {
+    height: 80px; /* Ajuste del tamaño de la imagen para dispositivos medianos */
+  }
+
+  .btn-option-user {
+    padding: 6px 12px; /* Reducción del padding para dispositivos medianos */
+    font-size: 12px; /* Reducción del tamaño de fuente para dispositivos medianos */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-item {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px; /* Tamaño de letra para dispositivos pequeños */
+  }
+
+  .nav-item a {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px; /* Tamaño de letra para dispositivos pequeños */
+  }
+
+  .btn-nav {
+    top: 10px; /* Ajuste de posición para dispositivos pequeños */
+    right: 5px; /* Ajuste de posición para dispositivos pequeños */
+  }
+
+  .navbar-brand {
+    left: 10px; /* Ajusta la posición a la izquierda para dispositivos pequeños */
+    transform: translateY(-50%);
+    display: inline-block; /* Cambia a inline-block para alinear a la izquierda */
+  }
+
+  .navbar-brand img {
+    height: 60px;/* Ajuste del tamaño de la imagen para dispositivos pequeños */
+  }
+
+ .btn-option-user {
+    padding: 4px 10px; /* Reducción del padding para dispositivos pequeños */
+    font-size: 10px; /* Reducción del tamaño de fuente para dispositivos pequeños */
+  }
+}

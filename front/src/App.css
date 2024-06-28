@@ -1,0 +1,92 @@
+
+
+/* Asegúrate de que el contenedor principal ocupe toda la altura de la pantalla */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* El contenido principal debe expandirse para ocupar el espacio disponible */
+.main-content {
+  flex: 1;
+}
+
+/* El footer debe estar al final de la página */
+.footer {
+  background-color: #12eadc;
+  color: #050000;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+.social-links,
+.contact-info,
+.legal-links {
+  flex: 1 1 100%; /* Ajuste para ocupar toda la anchura en dispositivos pequeños */
+  margin: 10px;
+}
+
+.social-links p {
+  margin-bottom: 10px; /* Añade separación entre los elementos p */
+}
+
+.social-links a,
+.contact-info a,
+.legal-links a {
+  color: #030004;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover,
+.contact-info a:hover,
+.legal-links a:hover {
+  color: #d33eed;
+}
+
+/* Media Queries para Responsividad */
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-wrap: nowrap; /* Evita que los elementos se desborden en pantallas más grandes */
+  }
+
+  .social-links,
+  .contact-info,
+  .legal-links {
+    flex: 1; /* Vuelve a la configuración original de flex */
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh; /* Establece el alto mínimo del cuerpo para que ocupe el 100% del viewport height */
+  flex-direction: column; /* Asegura que el cuerpo sea un contenedor de columna */
+}
+
+.content-wrapper {
+  flex: 1; /* Hace que este contenedor ocupe todo el espacio restante entre el header y el footer */
+  padding-bottom: 100px; /* Ajusta el padding inferior para dejar espacio para el footer */
+}
+

@@ -1,0 +1,137 @@
+/* Estilo principal para el contenedor "about" */
+.about-container {
+  max-width: 800px;
+  margin: 5% auto; /* Centrado automático y margen superior del 5% */
+  padding: 20px;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.about-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Estilo para el formulario "about" */
+.about-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.about-form input,
+.about-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.about-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.about-form button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #12eadc;
+  color: #050000;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 5px double #d33eed;
+  margin-top: 20px; /* Añadir espacio arriba para separación */
+}
+
+.about-form button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #d33eed;
+}
+
+/* Media Queries para Responsividad */
+
+/* Ajustes para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-form {
+    padding: 15px;
+  }
+
+  .about-form input,
+  .about-form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 0.9rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-form {
+    padding: 10px;
+  }
+
+  .about-form input,
+  .about-form textarea {
+    font-size: 0.8rem;
+  }
+
+  .about-form button {
+    margin-top: 15px;
+  }
+}
